@@ -451,6 +451,7 @@ h1{
     font-size:70px;
     line-height:1.1;
     margin:120px 0 40px;
+    margin-top: 70px;
 }
 
 .buttons{
@@ -470,11 +471,13 @@ h1{
     justify-content:center;
     margin:40px 0;
     padding:0 15px;
+    padding-top: 90px;
 }
 
 .card{
-    width:100%;
-    max-width:360px;
+    width: 85%;
+    max-width:330px;
+    margin: 30px auto;
 }
 
 .back-btn{
@@ -483,6 +486,8 @@ h1{
     left:0;
     margin:20px;
     display:inline-flex;
+    position: relative;
+    z-index: 1000;
 }
 
 .cart{
@@ -491,11 +496,10 @@ h1{
 }
 
 .cart-page{
-    width:calc(100% - 30px);
-    max-width:420px;
-    margin:20px auto;
+    width:92%;
+    margin:90px auto 30px;
     padding:20px;
-    transform:none;
+    
 }
 
 .cart-page h2{
