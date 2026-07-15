@@ -244,3 +244,244 @@ body{
     font-size: 14px;
     font-weight: bold;
 }
+.cart-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:25px;
+
+    background:rgba(255,255,255,.08);
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+}
+
+.cart-item img{
+
+    width:110px;
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+}
+
+.cart-info{
+
+    flex:1;
+
+    text-align:left;
+}
+
+.cart-info h3{
+
+    color:white;
+    margin:0 0 10px;
+}
+
+.cart-price{
+
+    color:brown;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.quantity{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    margin-top:15px;
+}
+
+.quantity button{
+
+    width:38px;
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:brown;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.quantity button:hover{
+
+    background:darkred;
+}
+
+.remove-btn{
+
+    margin-top:15px;
+
+    background:none;
+
+    border:none;
+
+    color:#ff4444;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+.cart-total{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.cart-total h2{
+
+    color:white;
+}
+
+.checkout-btn{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:brown;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.checkout-btn:hover{
+
+    background:darkred;
+}
+.notification{
+
+    position:fixed;
+
+    top:25px;
+    right:110px;
+
+    background:rgba(20,20,20,.95);
+
+    border:2px solid brown;
+
+    color:white;
+
+    padding:18px 28px;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    opacity:0;
+
+    transform:translateY(-30px);
+
+    transition:.35s;
+
+    z-index:9999;
+}
+
+.notification.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+/* ========================= */
+/*      Планшеты             */
+/* ========================= */
+
+@media (max-width: 1200px){
+
+    h1{
+        font-size:80px;
+    }
+
+    .buttons{
+        margin-top:250px;
+        gap:20px;
+    }
+
+}
+
+/* ========================= */
+/*       Телефоны            */
+/* ========================= */
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:48px;
+
+        margin-top:90px;
+
+        padding:0 15px;
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        margin-top:120px;
+
+        gap:20px;
+    }
+
+    .btn{
+
+        width:85%;
+
+        max-width:320px;
+
+        height:60px;
+
+        font-size:22px;
+    }
+
+    .cart{
+
+        width:55px;
+
+        height:55px;
+
+        right:20px;
+
+        top:20px;
+    }
+
+}
