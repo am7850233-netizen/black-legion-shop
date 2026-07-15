@@ -1,0 +1,246 @@
+h1{
+    color: brown;
+    font-size: 120px;
+    text-align: center;
+}
+body{
+    background-image: url(IMG_9999.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 400px; 
+
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    border: 2px solid brown;
+    background: brown;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.09s ease;
+}
+
+
+.btn:hover {
+    background: darkred;
+    transform: scale(1.04);
+}
+        
+    .cart {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background: darkred;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+.cart:hover {
+    background: brown;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.catalog {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.card {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid brown;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.25s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px brown;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: white;
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.price {
+    color: brown;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.buy-btn {
+    display: inline-block;
+    width: 150px;
+    padding: 15px 0;
+    margin-bottom: 25px;
+
+    background: brown;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.buy-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+.back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    padding: 12px 24px;
+
+    background: brown;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+.cart-page {
+    width: 600px;
+    margin: 20px auto;
+
+    background: rgba(0,0,0,0.75);
+
+    border: 2px solid brown;
+    border-radius: 20px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    transform: translateY(-70px);
+}
+
+.cart-icon {
+    font-size: 70px;
+    color: brown;
+
+    margin-bottom: 25px;
+}
+
+.cart-page h2 {
+    color: white;
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.cart-page p {
+    color: #cfcfcf;
+    font-size: 22px;
+
+    margin-bottom: 35px;
+}
+.cart {
+    position: fixed;
+
+    top: 25px;
+    right: 30px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background: darkred;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cart-count {
+
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    width: 24px;
+    height: 24px;
+
+    background: red;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: bold;
+}
