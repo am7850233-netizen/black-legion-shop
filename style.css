@@ -440,70 +440,84 @@ body{
 /*        МОБИЛЬНАЯ ВЕРСИЯ    */
 /* ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    h1{
-        font-size:60px;
-        text-align:center;
-        margin-top:30px;
-    }
+body{
+    background-attachment:scroll;
+    height:auto;
+}
 
-    .catalog{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:30px;
-    }
+h1{
+    font-size:70px;
+    line-height:1.1;
+    margin:120px 0 40px;
+}
 
-    .card{
-        width:90%;
-        max-width:360px;
-    }
+.buttons{
+    flex-direction:column;
+    align-items:center;
+    margin-top:80px;
+    gap:25px;
+}
 
-    .card img{
-        width:100%;
-        height:auto;
-    }
+.btn{
+    width:85%;
+    max-width:320px;
+}
 
-    .buy-btn{
-        width:85%;
-        font-size:34px;
-        padding:18px;
-    }
+.catalog{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+    padding:0 15px;
+}
 
-    .cart-page{
-        width:95%;
-        padding:20px;
-        margin-top:40px;
-    }
+.card{
+    width:100%;
+    max-width:360px;
+}
 
-    .cart-item{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-        gap:15px;
-    }
+.back-btn{
+    position:relative;
+    top:0;
+    left:0;
+    margin:20px;
+    display:inline-flex;
+}
 
-    .cart-item img{
-        width:150px;
-    }
+.cart{
+    top:20px;
+    right:20px;
+}
 
-    .quantity-controls{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:20px;
-    }
+.cart-page{
+    width:calc(100% - 30px);
+    max-width:420px;
+    margin:20px auto;
+    padding:20px;
+    transform:none;
+}
 
-    .cart-total{
-        text-align:center;
-    }
+.cart-page h2{
+    display:none;
+}
 
-    .checkout-btn{
-        width:100%;
-        margin-top:25px;
-    }
+.cart-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+.cart-info{
+    text-align:center;
+}
+
+.cart-total{
+    flex-direction:column;
+    gap:25px;
+}
+
+.checkout-btn{
+    width:100%;
+}
 
 }
