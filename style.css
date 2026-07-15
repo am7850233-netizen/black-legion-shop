@@ -437,51 +437,73 @@ body{
 }
 
 /* ========================= */
-/*       Телефоны            */
+/*        МОБИЛЬНАЯ ВЕРСИЯ    */
 /* ========================= */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
     h1{
-
-        font-size:48px;
-
-        margin-top:90px;
-
-        padding:0 15px;
+        font-size:60px;
+        text-align:center;
+        margin-top:30px;
     }
 
-    .buttons{
-
+    .catalog{
+        display:flex;
         flex-direction:column;
-
         align-items:center;
+        gap:30px;
+    }
 
-        margin-top:120px;
+    .card{
+        width:90%;
+        max-width:360px;
+    }
 
+    .card img{
+        width:100%;
+        height:auto;
+    }
+
+    .buy-btn{
+        width:85%;
+        font-size:34px;
+        padding:18px;
+    }
+
+    .cart-page{
+        width:95%;
+        padding:20px;
+        margin-top:40px;
+    }
+
+    .cart-item{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:15px;
+    }
+
+    .cart-item img{
+        width:150px;
+    }
+
+    .quantity-controls{
+        display:flex;
+        justify-content:center;
+        align-items:center;
         gap:20px;
     }
 
-    .btn{
-
-        width:85%;
-
-        max-width:320px;
-
-        height:60px;
-
-        font-size:22px;
+    .cart-total{
+        text-align:center;
     }
 
-    .cart{
-
-        width:55px;
-
-        height:55px;
-
-        right:20px;
-
-        top:20px;
+    .checkout-btn{
+        width:100%;
+        margin-top:25px;
     }
 
 }
