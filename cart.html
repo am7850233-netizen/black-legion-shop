@@ -18,7 +18,7 @@
     ← Главная
 </a>
 
-<h1>Корзина</h1>
+
 
 <div class="cart-page">
 
@@ -31,12 +31,40 @@
 
     <h2>Итого: <span id="totalPrice">0 ₽</span></h2>
 
-    <button class="checkout-btn">
+    <button class="checkout-btn" id="checkoutButton">
         Оформить заказ
     </button>
     </div>
 
 </div>
+
+</div>
+<div id="orderModal" class="order-modal">
+
+    <div class="order-box">
+
+        <h2>Оформление заказа</h2>
+
+        <input type="text" id="customerName" placeholder="Ваше имя">
+
+        <input type="text" id="customerPhone" placeholder="Телефон">
+
+        <input type="text" id="customerTelegram" placeholder="@telegram">
+
+        <input type="text" id="customerCity" placeholder="Город">
+
+        <textarea id="customerComment"
+        placeholder="Комментарий к заказу"></textarea>
+
+        <div class="modal-buttons">
+
+            <button id="sendOrder">Отправить</button>
+
+            <button id="closeModal">Отмена</button>
+
+        </div>
+
+    </div>
 
 </div>
 <script src="script.js"></script>

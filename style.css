@@ -525,3 +525,67 @@ h1{
 }
 
 }
+.order-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.order-box{
+    width:450px;
+    max-width:90%;
+    background:rgba(20,20,20,.95);
+    border:2px solid #d4002a;
+    border-radius:18px;
+    padding:30px;
+}
+
+.order-box h2{
+    color:white;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.order-box input,
+.order-box textarea{
+
+    width:100%;
+    margin-bottom:15px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2b2b2b;
+    color:white;
+    font-size:16px;
+}
+
+.order-box textarea{
+    resize:none;
+    height:90px;
+}
+
+.modal-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.modal-buttons button{
+
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#d4002a;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.modal-buttons button:hover{
+
+    opacity:.85;
+}
